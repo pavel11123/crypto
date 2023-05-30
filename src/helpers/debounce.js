@@ -1,5 +1,4 @@
 // this js file need for we can send one request
-
 export default function debounce(func, wait, immediate) {
   var timeout;
   return function () {
