@@ -21,11 +21,13 @@ const homeStore = create((set) => ({
         `https://api.coingecko.com/api/v3/search?query=${query}`
       );
 
+      console.log(response);
+
       // coins contain elements which we get from request search API
       const coins = response.data.coins.map((coin) => {
         return {
           name: coin.name,
-          image: coin.large,
+          imageLarge: coin.large,
           id: coin.id,
         };
       });
@@ -47,9 +49,8 @@ const homeStore = create((set) => ({
     const coins = response.data.coins.map((coin) => {
       return {
         name: coin.item.name,
-        image: coin.item.large,
+        imageLarge: coin.item.large,
         id: coin.item.id,
-        priceBtc: coin.item.price_btc,
       };
     });
 

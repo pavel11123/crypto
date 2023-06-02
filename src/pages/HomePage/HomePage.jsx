@@ -18,6 +18,9 @@ export default function HomePage() {
         store.coins.map((coin) => {
           return (
             <div key={coin.id}>
+              <div>
+                <img src={coin.imageLarge} alt={coin.name} />
+              </div>
               <Link to={`/${coin.id}`}>{coin.name}</Link>
             </div>
           );
