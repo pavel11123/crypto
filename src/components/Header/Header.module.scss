@@ -1,0 +1,12 @@
+@use "sass:math";
+@import "../../assests/scss/mixins";
+@import "../../assests/scss/variables";
+
+.header {
+  font-size: rem(25);
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #121212;
+  padding: rem(20);
+  text-align: center;
+}

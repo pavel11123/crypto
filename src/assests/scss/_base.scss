@@ -1,0 +1,115 @@
+/* базовые стили */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+input,
+button,
+textarea {
+  font-size: inherit;
+  -webkit-appearance: none;
+  background: none;
+}
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+a {
+  color: inherit;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+hr {
+  border: none;
+}
+
+.d-fl {
+  display: flex;
+}
+
+.d-fl-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-fl-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-fl-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-fl-wrap--reverse {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* базовые стили */
+
+// hidden scroll for body on click menu
+.none {
+  overflow: hidden;
+}

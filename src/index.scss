@@ -1,0 +1,41 @@
+@use "sass:math";
+
+@import "./assests/scss/mixins";
+@import "./assests/scss/fonts";
+@import "./assests/scss/variables";
+@import "./assests/scss/base";
+
+html {
+  @media (min-width: 1441px) {
+    font-size: calc(100vw / 1440 * 16);
+  }
+
+  @media (max-width: 360px) {
+    font-size: calc(100vw / 360 * 16);
+  }
+}
+
+// ---------Оболочка-----------
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+[class*="__container"] {
+  width: 100%;
+  max-width: rem(1068);
+  margin: 0 auto;
+  padding: 0 rem(20);
+}
+// ---------Оболочка-----------
+
+// ---------MAIN-----------
+.main {
+  flex: 1 1 auto;
+  // overflow: hidden;
+}
+// ---------MAIN-----------
